@@ -56,6 +56,9 @@ a {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
   margin-right: 76px;
@@ -70,6 +73,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  .header-list:first-child::after {
+    content: "";
+    background-color: #404bbf;
+  }
 }
 
 .logo {
@@ -84,7 +91,8 @@ a {
 .header-span {
   color: #2e2f42;
 }
-.header-list-link {
+.header-list .header-list-link {
+  position: relative;
   display: block;
   font-weight: 500;
   color: #2e2f42;
@@ -96,6 +104,21 @@ a {
 .header-list-link:focus {
   color: #404bbf;
 }
+.header-list-link.studio {
+  position: relative;
+}
+.header-list-link.studio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #404bbf;
+  height: 4px;
+  border-radius: 4px;
+  bottom: -1px;
+  z-index: 99;
+  left: 0;
+}
+
 .header-address {
   font-style: normal;
 }
@@ -133,7 +156,7 @@ a {
   background-image: url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 }
 
 .service-title {
@@ -182,6 +205,9 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.icon {
+  fill: red;
 }
 
 .features-second-title {
