@@ -73,10 +73,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  .header-list:first-child::after {
-    content: "";
-    background-color: #404bbf;
-  }
 }
 
 .logo {
@@ -109,6 +105,7 @@ a {
 }
 .header-list-link.studio::after {
   content: "";
+  width: 100%;
   display: block;
   position: absolute;
   background-color: #404bbf;
@@ -210,6 +207,13 @@ a {
   fill: red;
 }
 
+.features-icon-container {
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  padding: 24px 100px;
+}
+
 .features-second-title {
   font-size: 20px;
   color: #2e2f42;
@@ -217,6 +221,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .features-list {
   display: flex;
@@ -258,8 +263,7 @@ a {
 .person-info {
   padding: 32px 0;
 }
-.team-item-image {
-}
+
 .team-item-title {
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -273,6 +277,13 @@ a {
 .team-item-text {
   text-align: center;
 }
+.person-info social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 /* TEAM */
 
 /* PORTFOLIO */
