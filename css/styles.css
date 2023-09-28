@@ -416,6 +416,15 @@ a {
   background-color: rgba(46, 47, 66, 1);
   padding: 100px 0;
 }
+.container.footer-container {
+  display: flex;
+  align-items: baseline;
+
+  .firsr-part-footer {
+    display: flex;
+    margin-right: 120px;
+  }
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -440,7 +449,12 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
+.social-media-list {
+  display: flex;
+}
+
 .footer-social-link {
   display: block;
   background-color: #4d5ae5;
