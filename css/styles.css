@@ -454,7 +454,6 @@ a {
 }
 .social-media-list {
   display: flex;
-  display: inline-flex;
   align-items: flex-start;
   gap: 16px;
 }
