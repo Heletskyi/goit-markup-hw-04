@@ -114,10 +114,9 @@ a {
   display: block;
   position: absolute;
   background-color: #404bbf;
-  height: 2px;
+  height: 4px;
   border-radius: 4px;
   bottom: -1px;
-  z-index: 99;
   left: 0;
 }
 
