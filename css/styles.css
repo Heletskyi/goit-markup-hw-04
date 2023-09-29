@@ -196,11 +196,8 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.service-button:focus {
-  background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.service-button:focus {
+.service-button:focus,
+.service-button:hover {
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -308,7 +305,7 @@ a {
 }
 
 .social-link-list {
-  display: inline-flex;
+  display: flex;
   padding-bottom: 0px;
   justify-content: center;
   align-items: center;
